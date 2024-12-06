@@ -1,1 +1,1 @@
-Mastermind Console Applicatio
+Mastermind Console Application

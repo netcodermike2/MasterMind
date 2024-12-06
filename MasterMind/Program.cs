@@ -28,9 +28,6 @@ do
     }
     while (!GuessIsValid(guess));
 
-    // determine the hint
-    string hint = GetHint(randomNumber, guess);
-
     // determine if the guess is correct
     if (randomNumber == guess)
     {
@@ -42,6 +39,9 @@ do
         // provide hint if # of tries < MAX
         if (numberOfTries < MAX_NUMBER_OF_TRIES)
         {
+            // determine the hint
+            string hint = GetHint(randomNumber, guess);
+            // show hint
             Console.WriteLine($"Try again!  Hint: {hint}");
         }
         else
